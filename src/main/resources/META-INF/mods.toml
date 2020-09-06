@@ -1,0 +1,24 @@
+modLoader="javafml" #mandatory
+loaderVersion="[31,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+issueTrackerURL="http://my.issue.tracker/" #optional
+[[mods]] #mandatory
+modId="aftertaste"
+version="${file.jarVersion}" #mandatory
+displayName="After Taste" #mandatory
+displayURL="http://example.com/" #optional
+authors="mallrat208" #optional
+description='''
+Add Potion effects to items.
+'''
+[[dependencies.aftertaste]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[31,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.aftertaste]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
